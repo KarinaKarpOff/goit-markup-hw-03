@@ -57,6 +57,11 @@ a {
   color: #4d5ae5;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
 }
@@ -65,7 +70,15 @@ a {
   color: #f4f4fd;
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -75,9 +88,18 @@ a {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -90,10 +112,27 @@ a {
 .contacts-link:focus {
   color: #404bbf;
 }
+/* header finish */
 
 .main-section {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-text {
   font-weight: 700;
   font-size: 56px;
@@ -101,6 +140,10 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  margin: 0 auto;
+  /*padding-top: 188px;*/
+  padding-bottom: 48px;
+  width: 496px;
 }
 
 .main-button {
@@ -111,10 +154,25 @@ a {
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 .main-button:hover,
 .main-button:focus {
   background-color: #404bbf;
+}
+/* features */
+
+.features-list {
+  padding: 120px 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 264px;
+  width: calc(100% - 24px * 3 / 4);
 }
 
 .main-team-section {
@@ -128,8 +186,17 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 
+.team-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: calc(100% - 24px * 3 / 4);
+  margin-left: 0 auto;
+}
 .main-team-items {
   background-color: #ffffff;
 }
@@ -158,6 +225,13 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+}
+
+.portfolio-info {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 .main-portfolio-items {
   background-color: #ffffff;
@@ -199,6 +273,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  width: 264px;
 }
 
 .section-text {
