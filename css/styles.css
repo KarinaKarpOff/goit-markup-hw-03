@@ -3,7 +3,7 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
-/* reset */
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -23,15 +23,11 @@ a {
   text-decoration: none;
 }
 
-/* common */
-
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
-
-/* header */
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -112,7 +108,6 @@ a {
 .contacts-link:focus {
   color: #404bbf;
 }
-/* header finish */
 
 .main-section {
   background-color: #2e2f42;
@@ -162,24 +157,25 @@ a {
 .main-button:focus {
   background-color: #404bbf;
 }
-/* features */
+
+.features-section {
+  padding: 120px 0;
+}
 
 .features-list {
-  padding: 120px 0;
   display: flex;
   align-items: center;
   gap: 24px;
-  width: 264px;
   width: calc(100% - 24px * 3 / 4);
 }
 
 .features-text {
   padding-bottom: 8px;
 }
-/* features end */
 
 .main-team-section {
   background-color: #f4f4fd;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -190,9 +186,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 120px;
   padding-bottom: 72px;
-  margin: 0 auto;
 }
 
 .team-info {
@@ -213,9 +207,8 @@ a {
 }
 
 .card-info {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  border-radius: 4px;
+  border-radius: 0 0 4px 4px;
+  padding: 32px 16px;
   overflow: hidden;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -236,6 +229,7 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  padding-top: 8px;
 }
 
 .main-portfolio {
@@ -262,6 +256,12 @@ a {
 
 .main-portfolio-items {
   background-color: #ffffff;
+}
+
+.portfolio-images {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .portfolio-card-text {
@@ -297,9 +297,6 @@ a {
   width: 264px;
 }
 
-.footer-logo {
-  padding-top: 100px;
-}
 .footer-text {
   font-weight: 400;
   font-size: 16px;
