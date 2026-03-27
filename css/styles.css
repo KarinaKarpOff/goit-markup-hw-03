@@ -141,7 +141,6 @@ a {
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
-  /*padding-top: 188px;*/
   padding-bottom: 48px;
   width: 496px;
 }
@@ -167,7 +166,6 @@ a {
 
 .features-list {
   padding: 120px 0;
-  margin: 0;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -175,8 +173,14 @@ a {
   width: calc(100% - 24px * 3 / 4);
 }
 
+.features-text {
+  padding-bottom: 8px;
+}
+/* features end */
+
 .main-team-section {
   background-color: #f4f4fd;
+  padding-bottom: 120px;
 }
 
 .main-section-text {
@@ -188,6 +192,7 @@ a {
   color: #2e2f42;
   padding-top: 120px;
   padding-bottom: 72px;
+  margin: 0 auto;
 }
 
 .team-info {
@@ -195,10 +200,24 @@ a {
   align-items: center;
   gap: 24px;
   width: calc(100% - 24px * 3 / 4);
-  margin-left: 0 auto;
 }
+
 .main-team-items {
   background-color: #ffffff;
+}
+
+.team-images {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .main-team-text {
@@ -218,6 +237,12 @@ a {
   text-align: center;
   color: #434455;
 }
+
+.main-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .main-portfolio-text {
   font-weight: 700;
   font-size: 36px;
@@ -225,16 +250,24 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-bottom: 72px;
 }
 
 .portfolio-info {
-  margin: 0;
-  padding: 0;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  width: calc(100% - 24 * 2 / 3);
 }
+
 .main-portfolio-items {
   background-color: #ffffff;
+}
+
+.portfolio-card-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .portfolio-images-text {
@@ -256,6 +289,12 @@ a {
 
 .page-footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-logo-text {
+  width: 264px;
 }
 
 .footer-logo {
@@ -269,7 +308,6 @@ a {
   text-align: left;
   color: #f4f4fd;
   padding-top: 16px;
-  padding-bottom: 100px;
 }
 
 .features-text {
